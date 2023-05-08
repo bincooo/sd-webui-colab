@@ -15,6 +15,7 @@ sdw = base64.b64decode(("c3RhYmxlLWRpZmZ1c2lvbi13ZWJ1aQ==").encode('ascii')).dec
 1. Replace all `stable-diffusion-webui` characters with `$sdw`
 2. Replace all `webui` characters with `$w`
 
+[civitai](https://civitai.com)
 
 ### Used
 You can use me url: <br/>
