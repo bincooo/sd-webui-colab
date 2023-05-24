@@ -30,11 +30,12 @@ Append code in header：
 ```shell
 #@title 🚀 `Launch web UI`
 #@markdown ** frp client setting **
-servAddr = "127.0.0.1" #@param {type:"string"}
+key = "" #@param {type:"string"}
+servAddr = "" #@param {type:"string"}
 !wget https://github.com/fatedier/frp/releases/download/v0.48.0/frp_0.48.0_linux_amd64.tar.gz
 !tar -zxvf frp_0.48.0_linux_amd64.tar.gz
 !sed -i -e 's/server_addr = 127.0.0.1/server_addr = '{servAddr}'/g' /content/frp_0.48.0_linux_amd64/frpc.ini
-!echo -e '\n[web]\ntype = http\nlocal_ip = 127.0.0.1\nlocal_port = 7860\ncustom_domains = two.domain.com' >> /content/frp_0.48.0_linux_amd64/frpc.ini
+!echo -e '\n[web]\ntype = http\nlocal_ip = 127.0.0.1\nlocal_port = 7860\ncustom_domains = '{key}'.domain.com' >> /content/frp_0.48.0_linux_amd64/frpc.ini
 !nohup /content/frp_0.48.0_linux_amd64/frpc -c /content/frp_0.48.0_linux_amd64/frpc.ini > /dev/null 2>&1 &
 #========
 ```
