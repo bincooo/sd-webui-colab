@@ -12,8 +12,8 @@ sdw = base64.b64decode(("c3RhYmxlLWRpZmZ1c2lvbi13ZWJ1aQ==").encode('ascii')).dec
 ```
 
 ### Step2
-1. Replace all `stable-diffusion-webui` characters with `$sdw`
-2. Replace all `webui` characters with `$w`
+1. Replace all `stable-diffusion-webui` characters with `{sdw}`
+2. Replace all `webui` characters with `{w}`
 
 [civitai](https://civitai.com)
 
