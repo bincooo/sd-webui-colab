@@ -7,13 +7,13 @@ import sys
 import os
 import base64
 
-w = base64.b64decode(("d2VidWk=").encode('ascii')).decode('ascii')
-sdw = base64.b64decode(("c3RhYmxlLWRpZmZ1c2lvbi13ZWJ1aQ==").encode('ascii')).decode('ascii')
+w = base64.b64decode(("d2VidQ==").encode('ascii')).decode('ascii')
+sdw = base64.b64decode(("c3RhYmxlLWRpZmZ1c2lvbi13ZWJ1").encode('ascii')).decode('ascii')
 ```
 
 ### Step2
-1. Replace all `stable-diffusion-webui` characters with `{sdw}`
-2. Replace all `webui` characters with `{w}`
+1. Replace all `stable-diffusion-webu` characters with `{sdw}`
+2. Replace all `webu` characters with `{w}`
 
 [civitai](https://civitai.com)
 
